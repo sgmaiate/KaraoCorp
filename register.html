@@ -19,24 +19,25 @@
     <main>
       <section class="register-form">
           <div>
-              <h1 class="page-title">KaraoCorp</h1>
+              <h1 class="page-title center">KaraoCorp</h1>
+              <p class="result"></p>
           </div>
         <form action="">
             <div class="two-form">
-          <input placeholder="Nome" type="text" name="name" />
-          <input placeholder="Sobrenome" type="text" name="last-name" />
+          <input placeholder="Nome" type="text" name="name"/>
+          <input placeholder="Sobrenome" type="text" name="last-name"/>
         </div>
         <div class="one-form">
           <input placeholder="E-mail" type="email" name="email" />
         </div>
         <div class="two-form">
-          <input placeholder="Telefone" type="tel" name="telephone" />
+          <input placeholder="Telefone" type="number" name="telephone" />
           <input placeholder="Senha" type="password" name="password" />
         </div>
         <div class="special-form">
             <div class="birthday-input">
             <label for="birthday">Data de Nascimento:</label>
-          <input type="date" name="birthday" />
+          <input class="birth-date" type="date" name="birthday" />
         </div>
           <select name="gender" id="defineGender">
             <option value="M">Masculino</option>
@@ -45,12 +46,14 @@
           </select>
         </div>
         <div class="submit-button">
-          <input type="submit">
+          <input class="sub-button" type="submit">
         </div>
         </form>
       </section>
     </section>
     </main>
     <!-- <footer></footer> -->
+    <script src="./assets/javascript/form.js"></script>
   </body>
+  
 </html>
