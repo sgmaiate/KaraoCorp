@@ -14,24 +14,21 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../images/background1.gif);
   background-size: 100%;
+
+  /* background: linear-gradient(
+    rgb(247, 226, 37),
+    rgb(194, 61, 128),
+    rgb(35, 25, 88)
+  ); */
 }
-.page-header {
-  height: 200px;
-  width: 100%;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 20px;
-  font-size: 30px;
-}
-.page-header h1 {
-  height: 200px;
-}
+
 .page-title {
+  text-align: center;
+  font-size: 3rem;
   background: linear-gradient(to right, rgb(140, 30, 255), rgb(255, 144, 31));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
 }
 
 .page-header div {
@@ -43,22 +40,27 @@ body {
 }
 .page-header p {
   margin-top: 18px;
+  font-size: 1.2rem;
   color: rgb(255, 144, 31);
 }
-.page-header p:hover,
+
 .signup-button:hover {
   text-decoration: underline;
   cursor: pointer;
+  background-color: rgb(255, 0, 157);
+  color: rgb(255, 144, 31);
 }
 .signup-button {
+  cursor: pointer;
   margin: 10px 30px 0 20px;
-  height: 40px;
-  width: 110px;
+  height: 5em;
+  width: 13em;
   border-radius: 7px;
   color: rgb(140, 30, 255);
   background-color: transparent;
   font-size: 15px;
   border: rgb(255, 0, 157) 2px solid;
+  transition: 0.5s;
 }
 footer {
   background-color: purple;
@@ -74,11 +76,12 @@ main {
 .main-box {
   text-align: center;
   display: flex;
-  justify-content: space-around;
-  margin-top: 90px;
+  flex-direction: column;
+
+  margin-top: 0;
   padding: 75px;
-  width: 1000px;
-  height: 520px;
+  width: 65rem;
+  height: 40rem;
   /* background-color: blue; */
   border-radius: 20px;
 }
@@ -92,7 +95,6 @@ main {
   border-radius: 20px;
   padding: 40px;
   color: white;
-  border: violet 2px solid;
 }
 .login-box .credentials {
   display: flex;
@@ -101,18 +103,27 @@ main {
 }
 .credentials input {
   color: black;
-  width: 70%;
+  width: 23em;
   height: 40px;
-  border-radius: 7px;
-  margin: 5px 0 10px 0;
+  /* border-radius: 7px; */
+  margin: 15px 0 10px 0;
   padding: 5px;
+  border: none;
+  border-bottom: 1px dotted black;
 }
-
+.credentials input:focus {
+  border-color: none;
+  color: rgb(130, 10, 209);
+  outline: none;
+}
+.credentials input:first-child {
+  margin-top: -10px;
+}
 .login-button {
-  margin-top: 10px;
+  margin-top: 15px;
   align-self: center;
   height: 40px;
-  width: 150px;
+  width: 8em;
   border-radius: 8px;
   border: none;
   cursor: pointer;
@@ -120,10 +131,12 @@ main {
   border: rgb(255, 0, 157) 2px solid;
   background-color: transparent;
   font-size: 20px;
+  transition: 0.5s;
 }
 
 .login-button:hover {
-  background-color: rgb(143, 99, 4);
+  background-color: rgb(255, 0, 157);
+  color: rgb(255, 144, 31);
 }
 
 .login-options {
@@ -142,5 +155,38 @@ main {
 }
 .login-title {
   margin-bottom: 30px;
-  font-size: 30px;
+  font-size: 2rem;
+}
+.divisor {
+  display: flex;
+  justify-content: space-between;
+}
+.signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.signup h1 {
+  font-size: 2rem;
+}
+@media (max-width: 700px) {
+  .divisor {
+    flex-direction: column;
+  }
+  .login-box {
+    width: 100%;
+  }
+  .signup {
+    margin-top: 50px;
+  }
+  .credentials input {
+    width: 17em;
+  }
+  .page-title {
+    font-size: 2rem;
+  }
+  .page-body {
+    background-size: 450%;
+    background-position: center;
+  }
 }

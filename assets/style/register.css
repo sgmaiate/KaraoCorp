@@ -136,12 +136,6 @@ main {
   width: 100px;
   border-radius: 6px;
 }
-.success {
-  color: green;
-}
-.failed {
-  color: red;
-}
 .center {
   text-align: center;
 }

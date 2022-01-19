@@ -36,13 +36,12 @@ const createAccount = (event) => {
   if (complete == 6) {
     verification[0].classList.remove("failed");
     verification[0].innerHTML = "Conta Criada!";
-    verification[0].classList.add("success");
+    verification[0].style.color = "green";
   } else {
     verification[0].classList.remove("success");
     verification[0].innerHTML = "Preencha todos os Campos!";
-    verification[0].classList.add("failed");
+    verification[0].style.color = "red";
   }
   //    alert("Conta Criada!");
 };
 submitButton[0].addEventListener("click", createAccount);
-console.log(todayYear);
