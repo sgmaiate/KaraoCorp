@@ -51,6 +51,5 @@ function closeWindow() {
 function openWindow() {
   registerPage.style.visibility = "visible";
 }
-registerPage.addEventListener("click", closeWindow);
 submitButton[0].addEventListener("click", createAccount);
 console.log(registerPage);

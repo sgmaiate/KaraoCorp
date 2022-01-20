@@ -262,7 +262,7 @@ main {
     width: 100%;
   }
   .signup {
-    margin-top: 50px;
+    margin-top: 10px;
   }
   .credentials input {
     width: 17em;
@@ -309,5 +309,9 @@ main {
   }
   .close-page {
     margin-left: 220px;
+  }
+  .signup-button {
+    height: 4em;
+    width: 10em;
   }
 }
