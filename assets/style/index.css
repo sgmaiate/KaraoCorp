@@ -15,12 +15,6 @@ body {
     url(../images/background1.gif);
   background-size: 150%;
   background-position: center;
-
-  /* background: linear-gradient(
-    rgb(247, 226, 37),
-    rgb(194, 61, 128),
-    rgb(35, 25, 88)
-  ); */
 }
 
 .page-title {
@@ -170,6 +164,96 @@ main {
 .signup h1 {
   font-size: 2rem;
 }
+.register-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30rem;
+  height: 35rem;
+  background: linear-gradient(
+    rgb(247, 226, 37),
+    rgb(194, 61, 128),
+    rgb(35, 25, 88)
+  );
+  border-radius: 8px;
+}
+.register-form h1 {
+  font-size: 2.5rem;
+}
+.result {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.two-form {
+  margin: 20px 0;
+  width: 30em;
+  display: flex;
+  justify-content: space-around;
+}
+.two-form input {
+  width: 15em;
+  height: 3.5em;
+  padding: 5px;
+}
+.one-form {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+.one-form input {
+  width: 33em;
+  height: 3.5em;
+  padding: 5px;
+}
+.special-form {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 15px 0 15px;
+}
+.special-form select {
+  width: 15em;
+}
+.special-form input {
+  height: 50px;
+  font-size: 18px;
+  width: 13em;
+}
+.birthday-input {
+  display: flex;
+  flex-direction: column;
+  margin-top: -10px;
+}
+.submit-button {
+  margin-top: 50px;
+  height: 100 px;
+  display: flex;
+  justify-content: center;
+}
+.submit-button input {
+  height: 50px;
+  width: 100px;
+  border-radius: 6px;
+}
+.form-center {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+.close-page {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 350px;
+  color: red;
+  cursor: pointer;
+}
+/* CODIGO PARA RESPONSIVIDADE ABAIXO */
 @media (max-width: 700px) {
   .divisor {
     flex-direction: column;
@@ -186,8 +270,44 @@ main {
   .page-title {
     font-size: 2rem;
   }
+  .center {
+    font-size: 3.5rem;
+  }
   .page-body {
     background-size: 450%;
     background-position: center;
+  }
+  .register-form {
+    width: 20rem;
+    height: 45rem;
+  }
+  .two-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .two-form input {
+    width: 20em;
+    margin: 0 0 8px 0;
+  }
+  .one-form input {
+    width: 20em;
+  }
+  .special-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .special-form select {
+    margin: 20px 0 0 0;
+    height: 3em;
+  }
+  .sub-button {
+    margin: 0 0 5px 0;
+  }
+  .close-page {
+    margin-left: 220px;
   }
 }

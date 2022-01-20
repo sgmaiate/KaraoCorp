@@ -10,6 +10,7 @@ const telephone = nameInput[1].children[0];
 const password = nameInput[1].children[1];
 const email = emailInput[0].children[0];
 const verification = document.getElementsByClassName("result");
+const registerPage = document.getElementById("register");
 const createAccount = (event) => {
   event.preventDefault();
   console.log();
@@ -44,4 +45,12 @@ const createAccount = (event) => {
   }
   //    alert("Conta Criada!");
 };
+function closeWindow() {
+  registerPage.style.visibility = "hidden";
+}
+function openWindow() {
+  registerPage.style.visibility = "visible";
+}
+registerPage.addEventListener("click", closeWindow);
 submitButton[0].addEventListener("click", createAccount);
+console.log(registerPage);
